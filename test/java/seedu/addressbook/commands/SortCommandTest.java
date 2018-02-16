@@ -15,20 +15,21 @@ public class SortCommandTest {
 
     private final AddressBook addressBook = new AddressBook();
     private final TypicalPersons testPersons = new TypicalPersons();
-    private List<ReadOnlyPerson> listOfTypicalPersons = Arrays.asList(testPersons.amy, testPersons.bill, testPersons.candy);
+    private List<ReadOnlyPerson> listOfTypicalPersons =
+            Arrays.asList(testPersons.amy, testPersons.bill, testPersons.candy);
 
     /**
      * Sets up the addressbook to test the SortCommand.
      * @throws UniquePersonList.DuplicatePersonException
      */
-    private void assertSortCommandBehavior() throws UniquePersonList.DuplicatePersonException{
+    private void assertSortCommandBehavior() throws UniquePersonList.DuplicatePersonException {
         SortCommand command = new SortCommand();
         command.setData(addressBook, Collections.emptyList());
         command.addressBook.addPerson(testPersons.candy);
         command.addressBook.addPerson(testPersons.amy);
         command.addressBook.addPerson(testPersons.bill);
         CommandResult result = command.execute();
-        assertEquals(Command.getMessageForPersonListShownSummary(listOfTypicalPersons),result.feedbackToUser);
+        assertEquals(Command.getMessageForPersonListShownSummary(listOfTypicalPersons), result.feedbackToUser);
     }
 
 
