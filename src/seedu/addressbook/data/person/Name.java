@@ -3,6 +3,7 @@ package seedu.addressbook.data.person;
 import seedu.addressbook.data.exception.IllegalValueException;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -56,8 +57,18 @@ public class Name {
     }
 
     @Override
-    public int hashCode() {
-        return fullName.hashCode();
-    }
+    public int hashCode() { return fullName.hashCode(); }
+
+    /**
+     * Comparator for sorting people by alphabetical order.
+
+    public static Comparator<Name> nameComparator = new Comparator<Name>() {
+        @Override
+        public int compare(Name p1, Name p2) {
+            String personName1 = p1.getWordsInName().get(0);
+            String personName2 = p2.getWordsInName().get(0);
+            return personName1.compareTo(personName2);
+        }
+    };*/
 
 }
