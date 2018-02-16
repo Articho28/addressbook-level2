@@ -57,7 +57,9 @@ public class Name {
     }
 
     @Override
-    public int hashCode() { return fullName.hashCode(); }
+    public int hashCode() {
+        return fullName.hashCode();
+    }
 
     /**
      * Comparator for sorting people by alphabetical order.

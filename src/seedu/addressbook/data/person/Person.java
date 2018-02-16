@@ -4,7 +4,6 @@ import seedu.addressbook.data.tag.UniqueTagList;
 
 import java.util.Comparator;
 import java.util.Objects;
-import java.lang.String;
 
 /**
  * Represents a Person in the address book.

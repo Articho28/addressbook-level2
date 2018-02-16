@@ -11,7 +11,7 @@ public class SortCommand extends Command {
 
     public static final String COMMAND_WORD = "sort";
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Sorts entries in alphabetical order."
-            + "Indices are also updated.\n"
+            + " Indices are also updated.\n"
             + "Example: " + COMMAND_WORD;
 
 
@@ -33,6 +33,6 @@ public class SortCommand extends Command {
  */
 class SortByName implements Comparator<ReadOnlyPerson> {
     public int compare(ReadOnlyPerson p1, ReadOnlyPerson p2) {
-       return p1.getName().fullName.compareTo(p2.getName().fullName);
+        return p1.getName().fullName.compareTo(p2.getName().fullName);
     }
 }
