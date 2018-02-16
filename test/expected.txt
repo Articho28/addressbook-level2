@@ -297,6 +297,18 @@
 || 
 || 0 persons listed!
 || ===================================================
+|| Enter command: || [Command entered:  add Samuel Jackson p/11112222 e/samuel@gmail.com a/HollyWood]
+|| New person added: Samuel Jackson Phone: 11112222 Email: samuel@gmail.com Address: HollyWood Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  add Arty Skliar p/22221111 e/artsiom.sk@gmail.com a/RC]
+|| New person added: Arty Skliar Phone: 22221111 Email: artsiom.sk@gmail.com Address: RC Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  sort]
+|| 	1. Arty Skliar Phone: 22221111 Email: artsiom.sk@gmail.com Address: RC Tags: 
+|| 	2. Samuel Jackson Phone: 11112222 Email: samuel@gmail.com Address: HollyWood Tags: 
+|| 
+|| 2 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  exit]
 || Exiting Address Book as requested ...
 || ===================================================

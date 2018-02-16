@@ -149,6 +149,15 @@
   list
 
 ##########################################################
+# test sort command (add unsorted entries and then sort)
+##########################################################
+
+  # add contact
+  add Samuel Jackson p/11112222 e/samuel@gmail.com a/HollyWood
+  add Arty Skliar p/22221111 e/artsiom.sk@gmail.com a/RC
+  sort
+
+##########################################################
 # test exit command
 ##########################################################
 
