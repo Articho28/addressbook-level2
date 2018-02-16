@@ -10,11 +10,15 @@ import java.util.Comparator;
 public class SortCommand extends Command {
 
     public static final String COMMAND_WORD = "sort";
-    public static final String MESSAGE_USAGE = COMMAND_WORD + " command recognized.";
+    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Sorts entries in alphabetical order."
+            + "Indices are also updated.\n"
+            + "Example: " + COMMAND_WORD;
 
 
-
-
+    /**
+     * Executes the "sort" command.
+     * @return Executes "sort" operation.
+     */
     @Override
     public CommandResult execute() {
         List<ReadOnlyPerson> allPersons = addressBook.getAllPersons().immutableListView();
